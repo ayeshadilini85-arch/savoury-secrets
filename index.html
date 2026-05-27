@@ -5,78 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Savoury Secrets | Authentic Sri Lankan Spices & Curry Blends</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       color: #fff;
-      background: url('https://images.unsplash.com/photo-1604908177225-1f2c2f3b7f10?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
       background-size: cover;
     }
 
     .overlay {
-      background: rgba(30, 10, 5, 0.75);
+      background: rgba(0, 60, 20, 0.75);
       min-height: 100vh;
       padding: 40px 20px;
     }
 
     header {
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
-    h1 {
+    header h1 {
       font-size: 42px;
-      color: #ffb347;
+      color: #f4d03f;
       margin-bottom: 10px;
     }
 
-    h2 {
-      color: #ffd580;
-      margin-top: 0;
-    }
-
-    .tagline {
+    header p {
       font-size: 18px;
-      color: #ffe6b3;
+      color: #d4f5d4;
     }
 
-    .section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 12px;
+    .container {
+      max-width: 1000px;
+      margin: auto;
     }
 
-    a {
-      color: #ffcc70;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .card {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 25px;
+      margin: 20px 0;
+      border-left: 6px solid #f4d03f;
+      border-radius: 10px;
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 18px;
-      margin: 10px 5px;
-      background: #d97706;
+      margin: 10px 10px 0 0;
+      padding: 12px 20px;
+      background: #2ecc71;
       color: white;
-      border-radius: 8px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
     }
 
     .btn:hover {
-      background: #b45309;
+      background: #27ae60;
     }
 
     footer {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
       font-size: 14px;
-      color: #ddd;
+      color: #ccc;
     }
   </style>
 </head>
@@ -85,43 +79,47 @@
   <div class="overlay">
 
     <header>
-      <h1> Savoury Secrets</h1>
-      <h2>Authentic Sri Lankan Spices & Curry Blends</h2>
-      <p class="tagline">Freshly blended • No preservatives • Export quality spices</p>
+      <h1>Savoury Secrets</h1>
+      <p>Authentic Sri Lankan Spices & Curry Blends</p>
     </header>
 
-    <div class="section">
-      <h2>About Us</h2>
-      <p>
-        Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully selected ingredients.
-        Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
-      </p>
-    </div>
+    <div class="container">
 
-    <div class="section">
-      <h2>Why Choose Us</h2>
-      <ul>
-        <li>✔ 100% Authentic Sri Lankan Recipes</li>
-        <li>✔ Freshly blended with premium ingredients</li>
-        <li>✔ No artificial colors or preservatives</li>
-        <li>✔ Export-quality packaging</li>
-      </ul>
-    </div>
+      <div class="card">
+        <h2> About Us</h2>
+        <p>
+          Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully selected ingredients.
+          Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
+        </p>
+      </div>
 
-    <div class="section">
-      <h2>Contact & Orders</h2>
+      <div class="card">
+        <h2> Why Choose Us</h2>
+        <ul>
+          <li>100% Authentic Sri Lankan Recipes</li>
+          <li>Freshly blended with premium ingredients</li>
+          <li>No artificial colors or preservatives</li>
+          <li>Export-quality packaging</li>
+        </ul>
+      </div>
 
-      <p><strong>Email:</strong> sasavorysecrets85@gmail.com</p>
+      <div class="card">
+        <h2>📦 Order Now</h2>
+        <p>Contact us directly or visit our pages to place your order.</p>
 
-      <p>
         <a class="btn" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
           Facebook Page
         </a>
 
-        <a class="btn" href="YOUR_EBAY_LINK_HERE" target="_blank">
-          Order on eBay
+        <a class="btn" href="mailto:sasavorysecrets85@gmail.com">
+          Email Us
         </a>
-      </p>
+
+        <a class="btn" href="#" target="_blank">
+          eBay Store (Add Link)
+        </a>
+      </div>
+
     </div>
 
     <footer>

@@ -5,72 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Savoury Secrets | Authentic Sri Lankan Spices & Curry Blends</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: Arial, sans-serif;
       color: #fff;
-      background: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1604908176997-125f25cc500f') no-repeat center center fixed;
       background-size: cover;
     }
 
+    /* dark spice overlay */
     .overlay {
-      background: rgba(0, 60, 20, 0.75);
+      background: linear-gradient(
+        135deg,
+        rgba(60, 30, 10, 0.85),
+        rgba(120, 70, 20, 0.75),
+        rgba(30, 20, 10, 0.85)
+      );
       min-height: 100vh;
       padding: 40px 20px;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
-    header h1 {
+    h1 {
       font-size: 42px;
-      color: #f4d03f;
       margin-bottom: 10px;
+      color: #ffcc70;
+      letter-spacing: 1px;
     }
 
-    header p {
+    p.tagline {
       font-size: 18px;
-      color: #d4f5d4;
+      color: #ffe6b3;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
+      text-align: center;
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.55);
+      background: rgba(0,0,0,0.55);
       padding: 25px;
       margin: 20px 0;
-      border-left: 6px solid #f4d03f;
-      border-radius: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
 
     .btn {
       display: inline-block;
-      margin: 10px 10px 0 0;
+      margin: 10px;
       padding: 12px 20px;
-      background: #2ecc71;
-      color: white;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
+      font-weight: bold;
+      color: white;
+      transition: 0.3s;
     }
 
-    .btn:hover {
-      background: #27ae60;
+    .fb { background: #3b5998; }
+    .fb:hover { background: #2d4373; }
+
+    .email { background: #d35400; }
+    .email:hover { background: #a84300; }
+
+    .ebay { background: #333; }
+    .ebay:hover { background: #000; }
+
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 16px;
     }
 
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 14px;
-      color: #ccc;
+      color: #ffd9a0;
     }
   </style>
 </head>
@@ -80,21 +102,22 @@
 
     <header>
       <h1>Savoury Secrets</h1>
-      <p>Authentic Sri Lankan Spices & Curry Blends</p>
+      <p class="tagline">Authentic Sri Lankan Spice Blends • Fresh • Pure • Traditional</p>
     </header>
 
     <div class="container">
 
       <div class="card">
-        <h2> About Us</h2>
+        <h2>About Us</h2>
         <p>
-          Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully selected ingredients.
-          Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
+          Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully
+          selected ingredients. Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
+          
         </p>
       </div>
 
       <div class="card">
-        <h2> Why Choose Us</h2>
+        <h2>Why Choose Us</h2>
         <ul>
           <li>100% Authentic Sri Lankan Recipes</li>
           <li>Freshly blended with premium ingredients</li>
@@ -104,28 +127,33 @@
       </div>
 
       <div class="card">
-        <h2>📦 Order Now</h2>
-        <p>Contact us directly or visit our pages to place your order.</p>
+        <h2>Order Now</h2>
+        <p>Get your authentic spice blends today!</p>
 
-        <a class="btn" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
-          Facebook Page
+        <a class="btn fb" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
+          Visit Facebook Page
         </a>
 
-        <a class="btn" href="mailto:sasavorysecrets85@gmail.com">
-          Email Us
+        <a class="btn email" href="mailto:sasavorysecrets85@gmail.com">
+          Order via Email
         </a>
 
-        <a class="btn" href="https://www.ebay.com/usr/savourysecrets" target="_blank">
-          eBay Store 
+        <a class="btn ebay" href="#" target="_blank">
+          Shop on eBay (Add Link)
         </a>
       </div>
 
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: sasavorysecrets85@gmail.com</p>
+        <p>Facebook: Savoury Secrets Page</p>
+      </div>
+
+      <footer>
+        © 2023 Savoury Secrets | Authentic Sri Lankan Spices
+      </footer>
+
     </div>
-
-    <footer>
-      © 2023 Savoury Secrets | Authentic Sri Lankan Spices
-    </footer>
-
   </div>
 </body>
 </html>

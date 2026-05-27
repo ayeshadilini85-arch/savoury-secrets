@@ -8,25 +8,27 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #d9f7d9, #a8e6a3);
-      color: #1f3b1f;
+      font-family: "Arial", sans-serif;
+      background: linear-gradient(135deg, #dff5df, #a8e6a3);
+      color: #1f3d1f;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px;
-      background: rgba(0, 100, 0, 0.1);
+      padding: 70px 20px;
+      background: rgba(0, 80, 0, 0.08);
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 44px;
+      margin: 0;
+      color: #1b5e20;
     }
 
     h2 {
       font-weight: normal;
-      color: #2f5d2f;
+      margin-top: 10px;
+      color: #2e7d32;
     }
 
     .container {
@@ -36,32 +38,62 @@
     }
 
     .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      padding: 25px;
       margin-bottom: 20px;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .btn-group {
+      margin-top: 15px;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 20px;
-      margin: 10px 5px;
-      background: #2e7d32;
-      color: white;
-      text-decoration: none;
+      padding: 12px 18px;
+      margin: 8px 6px;
       border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
     }
 
-    .btn:hover {
+    .fb {
+      background: #2e7d32;
+    }
+
+    .fb:hover {
       background: #1b5e20;
+    }
+
+    .ebay {
+      background: #43a047;
+    }
+
+    .ebay:hover {
+      background: #2e7d32;
+    }
+
+    .email {
+      background: #66bb6a;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(0, 80, 0, 0.2);
-      margin-top: 30px;
+      background: rgba(0, 60, 0, 0.1);
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -95,17 +127,20 @@
 
   <div class="card">
     <h3>Order Now</h3>
-    <a class="btn" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
-      Order via Facebook
-    </a>
 
-    <a class="btn" href="https://www.ebay.com" target="_blank">
-      Order via eBay
-    </a>
+    <div class="btn-group">
+      <a class="btn fb" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
+        Order via Facebook
+      </a>
 
-    <a class="btn" href="mailto:sasavorysecrets85@gmail.com">
-      Email Us
-    </a>
+      <a class="btn ebay" href="https://www.ebay.com" target="_blank">
+        Order via eBay
+      </a>
+
+      <a class="btn email" href="mailto:sasavorysecrets85@gmail.com">
+        Email Us
+      </a>
+    </div>
   </div>
 
 </div>

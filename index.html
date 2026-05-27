@@ -1,121 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Savoury Secrets | Authentic Sri Lankan Spices & Curry Blends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savoury Secrets | Authentic Sri Lankan Spices & Curry Blends</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      background: url('https://images.unsplash.com/photo-1604908176997-125f25cc500f') no-repeat center center/cover;
-    }
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    .overlay {
-      background: rgba(0, 60, 20, 0.75);
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
 
-    header {
-      text-align: center;
-      padding: 20px;
-    }
+body {
+    background: #f4f1ea;
+    color: #2f2f2f;
+}
 
-    h1 {
-      font-size: 42px;
-      color: #a8e6a1;
-    }
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(40, 54, 24, 0.95);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
 
-    p.tagline {
-      font-size: 18px;
-      color: #d0ffd0;
-    }
+nav h1 {
+    color: #f4d35e;
+    font-size: 20px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-    .card {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 12px;
-    }
+nav a:hover {
+    color: #f4d35e;
+}
 
-    a.button {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #2e7d32;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1604908176997-125f25cc500f?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
 
-    a.button:hover {
-      background: #43a047;
-    }
+.hero h2 {
+    font-size: 48px;
+    color: #f4d35e;
+    animation: fadeIn 2s ease-in-out;
+}
 
-    footer {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 14px;
-      color: #c8f7c5;
-    }
-  </style>
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #6b8e23;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f4d35e;
+    color: #000;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #283618;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* ORDER */
+.order {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #283618;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h2 {font-size: 32px;}
+    nav {flex-direction: column;}
+}
+</style>
 </head>
 
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Savoury Secrets</h1>
-      <p class="tagline">Authentic Sri Lankan Spices & Curry Blends</p>
-    </header>
 
-    <div class="container">
-
-      <div class="card">
-        <h2>About Us</h2>
-        <p>
-          Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully
-          selected ingredients. Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Order Now</h2>
-
-        <a class="button" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
-          Visit Facebook Page
-        </a>
-
-        <a class="button" href="mailto:sasavorysecrets85@gmail.com">
-          Email Us
-        </a>
-
-        <a class="button" href="https://www.ebay.com/" target="_blank">
-          eBay Store
-        </a>
-      </div>
-
-      <div class="card">
-        <h2>Why Choose Us?</h2>
-        <p>✔ 100% Authentic Sri Lankan Spices</p>
-        <p>✔ Fresh & High Quality Ingredients</p>
-        <p>✔ Traditional Home-Made Blends</p>
-      </div>
-
-      <footer>
-        © 2023 Savoury Secrets | Crafted with ❤️ in Sri Lanka
-      </footer>
-
+<!-- NAV -->
+<nav>
+    <h1>Savoury Secrets</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#order">Order</a>
     </div>
-  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h2>Savoury Secrets</h2>
+        <p>Authentic Sri Lankan Spices & Curry Blends</p>
+        <p>Premium hand-selected spices bringing rich traditional flavors to your kitchen</p>
+        <a href="#order" class="btn">Order Now</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p class="about">
+        Savoury Secrets is dedicated to bringing authentic Sri Lankan spice blends crafted from carefully selected ingredients.
+        We deliver rich, aromatic, and traditional flavors straight to your kitchen.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2 class="section-title">Our Spices</h2>
+    <div class="products">
+        <div class="card">Curry Powder</div>
+        <div class="card">Roasted Chili Mix</div>
+        <div class="card">Cinnamon Blend</div>
+        <div class="card">Masala Mix</div>
+        <div class="card">Herbal Spice Mix</div>
+        <div class="card">Special Curry Kit</div>
+    </div>
+</section>
+
+<!-- ORDER -->
+<section id="order" class="order">
+    <h2 class="section-title">Order Now</h2>
+    <p>Get your authentic Sri Lankan spices today</p>
+
+    <a class="btn" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">Facebook Order</a>
+    <a class="btn" href="https://www.ebay.com/usr/savourysecrets" target="_blank">eBay Store</a>
+    <a class="btn" href="mailto:sasavorysecrets85@gmail.com">Email Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2023 Savoury Secrets | Authentic Sri Lankan Spices</p>
+    <p>Contact: sasavorysecrets85@gmail.com</p>
+</footer>
+
 </body>
 </html>

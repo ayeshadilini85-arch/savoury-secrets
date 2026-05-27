@@ -10,18 +10,11 @@
       margin: 0;
       font-family: Arial, sans-serif;
       color: #fff;
-      background: url('https://images.unsplash.com/photo-1604908176997-125f25cc500f') no-repeat center center fixed;
-      background-size: cover;
+      background: url('https://images.unsplash.com/photo-1604908176997-125f25cc500f') no-repeat center center/cover;
     }
 
-    /* dark spice overlay */
     .overlay {
-      background: linear-gradient(
-        135deg,
-        rgba(60, 30, 10, 0.85),
-        rgba(120, 70, 20, 0.75),
-        rgba(30, 20, 10, 0.85)
-      );
+      background: rgba(0, 60, 20, 0.75);
       min-height: 100vh;
       padding: 40px 20px;
     }
@@ -33,76 +26,56 @@
 
     h1 {
       font-size: 42px;
-      margin-bottom: 10px;
-      color: #ffcc70;
-      letter-spacing: 1px;
+      color: #a8e6a1;
     }
 
     p.tagline {
       font-size: 18px;
-      color: #ffe6b3;
+      color: #d0ffd0;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
     }
 
     .card {
-      background: rgba(0,0,0,0.55);
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 12px;
     }
 
-    .btn {
+    a.button {
       display: inline-block;
       margin: 10px;
       padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+      background: #2e7d32;
       color: white;
-      transition: 0.3s;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
-    .fb { background: #3b5998; }
-    .fb:hover { background: #2d4373; }
-
-    .email { background: #d35400; }
-    .email:hover { background: #a84300; }
-
-    .ebay { background: #333; }
-    .ebay:hover { background: #000; }
-
-    ul {
-      text-align: left;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    li {
-      margin: 10px 0;
-      font-size: 16px;
+    a.button:hover {
+      background: #43a047;
     }
 
     footer {
-      text-align: center;
       margin-top: 30px;
+      text-align: center;
       font-size: 14px;
-      color: #ffd9a0;
+      color: #c8f7c5;
     }
   </style>
 </head>
 
 <body>
   <div class="overlay">
-
     <header>
       <h1>Savoury Secrets</h1>
-      <p class="tagline">Authentic Sri Lankan Spice Blends • Fresh • Pure • Traditional</p>
+      <p class="tagline">Authentic Sri Lankan Spices & Curry Blends</p>
     </header>
 
     <div class="container">
@@ -112,45 +85,34 @@
         <p>
           Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully
           selected ingredients. Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
-          
         </p>
       </div>
 
       <div class="card">
-        <h2>Why Choose Us</h2>
-        <ul>
-          <li>100% Authentic Sri Lankan Recipes</li>
-          <li>Freshly blended with premium ingredients</li>
-          <li>No artificial colors or preservatives</li>
-          <li>Export-quality packaging</li>
-        </ul>
-      </div>
-
-      <div class="card">
         <h2>Order Now</h2>
-        <p>Get your authentic spice blends today!</p>
 
-        <a class="btn fb" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
+        <a class="button" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
           Visit Facebook Page
         </a>
 
-        <a class="btn email" href="mailto:sasavorysecrets85@gmail.com">
-          Order via Email
+        <a class="button" href="mailto:sasavorysecrets85@gmail.com">
+          Email Us
         </a>
 
-        <a class="btn ebay" href="#" target="_blank">
-          Shop on eBay (Add Link)
+        <a class="button" href="https://www.ebay.com/" target="_blank">
+          eBay Store
         </a>
       </div>
 
       <div class="card">
-        <h2>Contact</h2>
-        <p>Email: sasavorysecrets85@gmail.com</p>
-        <p>Facebook: Savoury Secrets Page</p>
+        <h2>Why Choose Us?</h2>
+        <p>✔ 100% Authentic Sri Lankan Spices</p>
+        <p>✔ Fresh & High Quality Ingredients</p>
+        <p>✔ Traditional Home-Made Blends</p>
       </div>
 
       <footer>
-        © 2023 Savoury Secrets | Authentic Sri Lankan Spices
+        © 2023 Savoury Secrets | Crafted with ❤️ in Sri Lanka
       </footer>
 
     </div>

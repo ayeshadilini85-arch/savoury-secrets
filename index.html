@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Savoury Secrets | Authentic Sri Lankan Spices & Curry Blends</title>
 
   <style>
@@ -14,16 +14,18 @@
     }
 
     body{
-      background:#fffaf2;
-      color:#333;
+      background:#f8f4ea;
+      color:#222;
       line-height:1.6;
     }
 
     header{
-      height:100vh;
       background:
-      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url('https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url('https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      min-height:100vh;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -38,21 +40,21 @@
 
     .hero h1{
       font-size:4rem;
-      margin-bottom:20px;
-      color:#ffd166;
-      text-shadow:2px 2px 10px rgba(0,0,0,0.5);
+      color:#f7c04a;
+      margin-bottom:15px;
+      text-shadow:2px 2px 8px #000;
     }
 
     .hero p{
       font-size:1.2rem;
-      margin-bottom:30px;
+      margin-bottom:25px;
     }
 
     .btn{
       display:inline-block;
       padding:14px 28px;
       margin:10px;
-      background:#2e7d32;
+      background:#c46b12;
       color:white;
       text-decoration:none;
       border-radius:40px;
@@ -61,7 +63,7 @@
     }
 
     .btn:hover{
-      background:#1b5e20;
+      background:#8b3e00;
       transform:scale(1.05);
     }
 
@@ -69,11 +71,11 @@
       padding:70px 8%;
     }
 
-    .section-title{
+    h2{
       text-align:center;
       font-size:2.5rem;
       margin-bottom:40px;
-      color:#b85c00;
+      color:#7b3f00;
     }
 
     .about{
@@ -81,6 +83,10 @@
       max-width:1000px;
       margin:auto;
       font-size:1.1rem;
+    }
+
+    .why-choose{
+      background:#fff4db;
     }
 
     .features{
@@ -93,27 +99,31 @@
     .feature-box{
       background:white;
       padding:30px;
-      border-radius:15px;
-      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      border-radius:18px;
       text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
     }
 
     .feature-box h3{
-      color:#2e7d32;
+      color:#9b4d00;
       margin-bottom:15px;
     }
 
     .products{
+      background:#faf7f0;
+    }
+
+    .product-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
+      gap:30px;
     }
 
     .product-card{
       background:white;
       border-radius:18px;
       overflow:hidden;
-      box-shadow:0 5px 15px rgba(0,0,0,0.12);
+      box-shadow:0 5px 18px rgba(0,0,0,0.1);
       transition:0.3s;
     }
 
@@ -133,47 +143,44 @@
     }
 
     .product-content h3{
-      color:#b85c00;
       margin-bottom:10px;
+      color:#7a3600;
     }
 
-    .product-content a{
+    .order-btn{
       display:inline-block;
-      margin-top:12px;
-      padding:10px 18px;
-      background:#c62828;
+      margin-top:15px;
+      padding:10px 22px;
+      background:#2f6f3e;
       color:white;
       text-decoration:none;
       border-radius:30px;
-      font-size:14px;
       font-weight:bold;
     }
 
-    .contact{
-      background:#2e7d32;
-      color:white;
-      text-align:center;
-      border-radius:20px;
-      padding:50px 20px;
-    }
-
-    .contact a{
-      color:#ffd166;
-      text-decoration:none;
-      font-weight:bold;
+    .order-btn:hover{
+      background:#1d4f2b;
     }
 
     footer{
-      background:#111;
-      color:#ddd;
+      background:#2f2b24;
+      color:white;
       text-align:center;
-      padding:20px;
-      margin-top:40px;
+      padding:35px 20px;
+    }
+
+    footer a{
+      color:#f7c04a;
+      text-decoration:none;
     }
 
     @media(max-width:768px){
       .hero h1{
-        font-size:2.5rem;
+        font-size:2.6rem;
+      }
+
+      .hero p{
+        font-size:1rem;
       }
     }
   </style>
@@ -181,230 +188,235 @@
 
 <body>
 
-<header>
-  <div class="hero">
-    <h1>Savoury Secrets</h1>
+  <header>
+    <div class="hero">
+      <h1>Savoury Secrets</h1>
+      <p>
+        Authentic Sri Lankan Spices & Curry Blends crafted with rich traditional flavors.
+        Freshly blended using premium export-quality ingredients.
+      </p>
+
+      <a href="https://www.facebook.com/share/17vWZa6CBR" class="btn" target="_blank">
+        Visit Facebook Page
+      </a>
+
+      <a href="https://www.ebay.com/" class="btn" target="_blank">
+        Order on eBay
+      </a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+
     <p>
-      Authentic Sri Lankan Spices & Curry Blends crafted with premium ingredients 
-      to bring traditional Sri Lankan flavors to your kitchen.
+      Savoury Secrets specializes in authentic Sri Lankan spices and curry blends
+      carefully crafted from premium ingredients. Our mission is to bring the
+      true taste of Sri Lanka to kitchens around the world with freshness,
+      tradition, and quality in every pack.
     </p>
+  </section>
 
-    <a class="btn" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
-      Visit Facebook Page
-    </a>
-
-    <a class="btn" href="YOUR_EBAY_STORE_LINK_HERE" target="_blank">
-      Order on eBay
-    </a>
-  </div>
-</header>
-
-<section>
-  <h2 class="section-title">About Us</h2>
-
-  <div class="about">
-    <p>
-      Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully
-      selected ingredients. Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
-      
-    </p>
+  <section class="why-choose">
+    <h2>Why Choose Us</h2>
 
     <div class="features">
 
       <div class="feature-box">
-        <h3>100% Authentic</h3>
-        <p>Traditional Sri Lankan recipes with genuine flavors.</p>
+        <h3>Authentic Recipes</h3>
+        <p>100% traditional Sri Lankan spice recipes and blends.</p>
       </div>
 
       <div class="feature-box">
-        <h3>Freshly Blended</h3>
-        <p>Premium quality ingredients blended for maximum aroma.</p>
+        <h3>Premium Ingredients</h3>
+        <p>Freshly blended using carefully selected high-quality spices.</p>
       </div>
 
       <div class="feature-box">
         <h3>No Preservatives</h3>
-        <p>No artificial colors or harmful preservatives added.</p>
+        <p>No artificial colors or preservatives added.</p>
       </div>
 
       <div class="feature-box">
         <h3>Export Quality</h3>
-        <p>Carefully packed to preserve freshness and quality.</p>
+        <p>Hygienically packed with export-quality packaging standards.</p>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2 class="section-title">Our Products</h2>
+  <section class="products">
+    <h2>Our Products</h2>
 
-  <div class="products">
+    <div class="product-grid">
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Unroasted Curry Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/closeup-of-tumeric-powder-spice-on-a-spoon-tSDAIZ2N-yU" alt="">
+        <div class="product-content">
+          <h3>Unroasted Curry Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Roasted Curry Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-wooden-spoon-filled-with-yellow-powder-on-top-of-a-wooden-table-MRFxCOL2e24" alt="">
+        <div class="product-content">
+          <h3>Roasted Curry Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Fenugreek Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/brown-powder-in-silver-round-bowl-MCeNtqgbJUo" alt="">
+        <div class="product-content">
+          <h3>Fenugreek Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1599909533879-0f8f09f7a4d4?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Fenugreek Seeds</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-white-plate-topped-with-a-pile-of-food-rBxfB-vvL0I" alt="">
+        <div class="product-content">
+          <h3>Fenugreek Seeds</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Cinnamon Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-bowl-of-cinnamon-powder-with-a-cinnamon-stick-sticking-out-of-it-VxdkbrxnabY" alt="">
+        <div class="product-content">
+          <h3>Cinnamon Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Cinnamon Sticks</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-bowl-of-nuts-and-cinnamon-sticks-on-a-table-wXrrmCgqnaI" alt="">
+        <div class="product-content">
+          <h3>Cinnamon Sticks</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Chilli Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/close-up-of-chilli-powder-mCyU1raQ-aA" alt="">
+        <div class="product-content">
+          <h3>Chilli Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1612257998645-3c4f1d7b87e1?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Chilli Pieces</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-pile-of-spices-next-to-a-red-chili-pepper-j401MN4U3pI" alt="">
+        <div class="product-content">
+          <h3>Chilli Pieces</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Mustard Seeds</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-spoon-filled-with-black-seed-on-top-of-a-white-table-KnqsFMimm1U" alt="">
+        <div class="product-content">
+          <h3>Mustard Seeds</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Cloves</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-glass-jar-filled-with-cloves-on-top-of-a-white-table-0jW-GZfVr1E" alt="">
+        <div class="product-content">
+          <h3>Cloves</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Cardamom</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-pile-of-green-beans-sitting-on-top-of-a-white-table-bF404j83DH0" alt="">
+        <div class="product-content">
+          <h3>Cardamom</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1599909533879-0f8f09f7a4d4?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Black Pepper Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-pile-of-gravel-on-a-white-background-OwgwCDviODM" alt="">
+        <div class="product-content">
+          <h3>Black Pepper Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Black Pepper Seeds</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 13 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/brown-coffee-beans-on-white-ceramic-bowl-jtKNexfk33c" alt="">
+        <div class="product-content">
+          <h3>Black Pepper Seeds</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Drumstick Leaves Powder</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 14 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/wooden-spoon-with-green-powder-on-a-green-background-_NMPnxjjs9s" alt="">
+        <div class="product-content">
+          <h3>Drumstick Leaves Powder</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Organic Water Lily Seeds</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 15 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/dried-lotus-seed-pods-float-on-dark-water-VBG0EE6zAfs" alt="">
+        <div class="product-content">
+          <h3>Organic Water Lily Seeds</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
-    </div>
 
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=1200&auto=format&fit=crop" alt="">
-      <div class="product-content">
-        <h3>Black Seeds</h3>
-        <a href="YOUR_EBAY_LINK_HERE" target="_blank">Order Now</a>
+      <!-- Product 16 -->
+      <div class="product-card">
+        <img src="https://unsplash.com/photos/a-pile-of-black-sesame-seeds-on-a-white-surface-BuWM6m3bb7c" alt="">
+        <div class="product-content">
+          <h3>Black Seeds</h3>
+          <a href="https://www.ebay.com/" target="_blank" class="order-btn">Order Now</a>
+        </div>
       </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+  <footer>
+    <h3>Savoury Secrets</h3>
 
-<section>
-  <div class="contact">
-
-    <h2>Contact Us</h2>
-
-    <p>Email:
+    <p>Email: 
       <a href="mailto:sasavorysecrets85@gmail.com">
         sasavorysecrets85@gmail.com
       </a>
     </p>
 
-    <br>
-
     <p>
       Facebook:
       <a href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
-        Savoury Secrets Facebook Page
+        Follow Us
       </a>
     </p>
 
-    <br>
-
-    <a class="btn" href="YOUR_EBAY_STORE_LINK_HERE" target="_blank">
-      Shop Now
-    </a>
-
-  </div>
-</section>
-
-<footer>
-  <p>
-    © 2023 Savoury Secrets | Authentic Sri Lankan Spices
-  </p>
-</footer>
+    <p style="margin-top:15px;">
+      © 2023 Savoury Secrets | Authentic Sri Lankan Spices
+    </p>
+  </footer>
 
 </body>
 </html>

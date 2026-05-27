@@ -3,258 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Savoury Secrets | Authentic Sri Lankan Spices</title>
+  <title>Savoury Secrets | Authentic Sri Lankan Spices & Curry Blends</title>
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    body {
+      margin: 0;
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #d9f7d9, #a8e6a3);
+      color: #1f3b1f;
     }
 
-    body{
-      background:#f7f3ea;
-      color:#222;
-      line-height:1.6;
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0, 100, 0, 0.1);
     }
 
-    header{
-      height:100vh;
-      background:
-      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-      url('https://images.unsplash.com/photo-1532336414038-cf19250c5757?q=80&w=1600&auto=format&fit=crop');
-      background-size:cover;
-      background-position:center;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:20px;
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    .hero{
-      max-width:800px;
-      color:white;
+    h2 {
+      font-weight: normal;
+      color: #2f5d2f;
     }
 
-    .hero h1{
-      font-size:60px;
-      margin-bottom:15px;
-      color:#f6c453;
-      text-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
     }
 
-    .hero p{
-      font-size:22px;
-      margin-bottom:25px;
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
 
-    .btn{
-      display:inline-block;
-      padding:14px 28px;
-      margin:10px;
-      border-radius:40px;
-      text-decoration:none;
-      font-weight:bold;
-      transition:0.3s;
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 10px 5px;
+      background: #2e7d32;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
     }
 
-    .btn-facebook{
-      background:#1877f2;
-      color:white;
+    .btn:hover {
+      background: #1b5e20;
     }
 
-    .btn-ebay{
-      background:#0b7d3b;
-      color:white;
-    }
-
-    .btn:hover{
-      transform:scale(1.05);
-      opacity:0.9;
-    }
-
-    section{
-      padding:70px 10%;
-    }
-
-    .about{
-      background:white;
-      text-align:center;
-    }
-
-    .about h2{
-      font-size:40px;
-      color:#0b7d3b;
-      margin-bottom:20px;
-    }
-
-    .about p{
-      max-width:900px;
-      margin:auto;
-      font-size:18px;
-    }
-
-    .features{
-      background:#fff6e7;
-    }
-
-    .features h2{
-      text-align:center;
-      color:#9b3d00;
-      margin-bottom:40px;
-      font-size:40px;
-    }
-
-    .feature-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .feature-box{
-      background:white;
-      padding:30px;
-      border-radius:15px;
-      text-align:center;
-      box-shadow:0 5px 15px rgba(0,0,0,0.1);
-      transition:0.3s;
-    }
-
-    .feature-box:hover{
-      transform:translateY(-8px);
-    }
-
-    .feature-box h3{
-      color:#0b7d3b;
-      margin-bottom:15px;
-    }
-
-    .contact{
-      background:#1d1d1d;
-      color:white;
-      text-align:center;
-    }
-
-    .contact h2{
-      color:#f6c453;
-      margin-bottom:20px;
-      font-size:38px;
-    }
-
-    .contact a{
-      color:#f6c453;
-      text-decoration:none;
-    }
-
-    footer{
-      background:#111;
-      color:#bbb;
-      text-align:center;
-      padding:15px;
-      font-size:14px;
-    }
-
-    @media(max-width:768px){
-      .hero h1{
-        font-size:42px;
-      }
-
-      .hero p{
-        font-size:18px;
-      }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 80, 0, 0.2);
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="hero">
-      <h1>Savoury Secrets</h1>
-      <p>Authentic Sri Lankan Spices & Curry Blends</p>
+<header>
+  <h1>Savoury Secrets</h1>
+  <h2>Authentic Sri Lankan Spices & Curry Blends</h2>
+</header>
 
-      <a class="btn btn-facebook"
-         href="https://www.facebook.com/share/17vWZa6CBR"
-         target="_blank">
-         Order via Facebook
-      </a>
+<div class="container">
 
-      <a class="btn btn-ebay"
-         href="https://www.ebay.com/"
-         target="_blank">
-         Order via eBay
-      </a>
-    </div>
-  </header>
-
-  <section class="about">
-    <h2>About Us</h2>
-
+  <div class="card">
+    <h3>About Us</h3>
     <p>
-      Savoury Secrets specializes in authentic Sri Lankan spices and curry blends
-      crafted from carefully selected premium ingredients. We bring rich,
-      traditional Sri Lankan flavors to kitchens around the world with freshness,
-      quality, and authentic taste in every pack.
+      Savoury Secrets specializes in authentic Sri Lankan spices and curry blends crafted from carefully selected ingredients.
+      Our mission is to bring rich, traditional Sri Lankan flavors to kitchens around the world.
     </p>
-  </section>
+  </div>
 
-  <section class="features">
-    <h2>Why Choose Us</h2>
+  <div class="card">
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>100% Authentic Sri Lankan Recipes</li>
+      <li>Freshly blended with premium ingredients</li>
+      <li>No artificial colors or preservatives</li>
+      <li>Export-quality packaging</li>
+    </ul>
+  </div>
 
-    <div class="feature-grid">
-
-      <div class="feature-box">
-        <h3>100% Authentic</h3>
-        <p>Traditional Sri Lankan recipes made with authentic spice combinations.</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>Freshly Blended</h3>
-        <p>Prepared using premium-quality ingredients for rich aroma and flavor.</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>No Artificial Additives</h3>
-        <p>No artificial colors or preservatives — only natural goodness.</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>Export Quality</h3>
-        <p>Carefully packed with export-quality packaging standards.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact Us</h2>
-
-    <p>Email:
-      <a href="mailto:sasavorysecrets85@gmail.com">
-        sasavorysecrets85@gmail.com
-      </a>
-    </p>
-
-    <br>
-
-    <p>
-      Follow us on Facebook for latest products, offers, and authentic Sri Lankan recipes.
-    </p>
-
-    <br>
-
-    <a class="btn btn-facebook"
-       href="https://www.facebook.com/share/17vWZa6CBR"
-       target="_blank">
-       Visit Facebook Page
+  <div class="card">
+    <h3>Order Now</h3>
+    <a class="btn" href="https://www.facebook.com/share/17vWZa6CBR" target="_blank">
+      Order via Facebook
     </a>
-  </section>
 
-  <footer>
-    © 2026 Savoury Secrets | Authentic Sri Lankan Spices
-  </footer>
+    <a class="btn" href="https://www.ebay.com" target="_blank">
+      Order via eBay
+    </a>
+
+    <a class="btn" href="mailto:sasavorysecrets85@gmail.com">
+      Email Us
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © 2023 Savoury Secrets | Authentic Sri Lankan Spices
+</footer>
 
 </body>
 </html>
